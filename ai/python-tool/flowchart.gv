@@ -1,0 +1,28 @@
+// Image Conversion to WebP
+digraph {
+	A [label=Start]
+	B [label="Get current path"]
+	C [label="Define whitelist and directory whitelist"]
+	D [label="For each directory in whitelist_dirs"]
+	E [label="For each file in directory"]
+	F [label="Check if file is in whitelist or directory is in directory whitelist"]
+	G [label="Check if file is an image"]
+	H [label="Open image"]
+	I [label="Check if image is animated"]
+	J [label="Convert image to WebP"]
+	K [label="Check file size"]
+	L [label="Update code references"]
+	M [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	J -> K
+	K -> L
+	L -> M
+}
